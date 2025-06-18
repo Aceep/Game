@@ -1,0 +1,643 @@
+html,
+body {
+    height: 100%;
+    background-image: url("../ressources/bg.svg");
+    background-position: top;
+    background-size: 100vw auto;
+}
+
+/*-------------------------------------------------------------------*/
+/*                              Login page                           */
+/*-------------------------------------------------------------------*/
+
+.form-signin {
+    max-width: 370px;
+    min-width: 300px;
+    padding: 2rem;
+    background-color: #FEFEFA;
+    border-radius: 3%;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin #register_password_input {
+    margin-bottom: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.form-signin #register_username_input, #two_fa_input {
+	margin-bottom: 10px;
+	border-bottom-right-radius: 0.375rem;
+	border-bottom-left-radius: 0.375rem;
+}
+
+/*-------------------------------------------------------------------*/
+/*                             Profile page                          */
+/*-------------------------------------------------------------------*/
+
+.form-signin #register_email_input, #register_phone_input, #two_fa_input {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+}
+
+#two_fa_sms, #two_fa_mail, #two_fa_app {
+    margin-bottom: 10px;
+}
+
+#profile_container{
+    max-width: 1650px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0.5rem;
+}
+
+
+#profile_info {
+    height: 80%;
+}
+
+#profile_avatar {
+    width: 8vw;
+    min-width: 70px;
+    height: 8vw;
+    min-height: 70px;
+    border-radius: 50%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 100% !important;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.game-mode-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.game_img:hover .game-mode-image{
+    transform: scale(1.1);
+}
+
+#duel_image {
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+}
+
+#tournament_image {
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+}
+
+.game_img {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#tournament_wrapper {
+    border-radius: 5px 0 0 5px;
+    border-bottom: 5px solid #FEFEFA;
+    border-left: 5px solid #FEFEFA;
+    border-top: 5px solid #FEFEFA;
+}
+
+#duel_wrapper {
+    border-radius: 0 5px 5px 0;
+    border-bottom: 5px solid #FEFEFA;
+    border-right: 5px solid #FEFEFA;
+    border-top: 5px solid #FEFEFA;
+}
+
+.mode_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5px;
+    color: #FEFEFA;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.game_img:hover .mode_text {
+    opacity: 1; /* Show text on hover */
+}
+
+
+/*-------------------------------------------------------------------*/
+/*                              Game page                            */
+/*-------------------------------------------------------------------*/
+
+#scene-container {
+    width: 95% !important;
+    height: 95% !important; 
+}
+
+#titleRow {
+    height: 23% !important;
+}
+
+#titleGame {
+    background-color: black;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#game.card{
+    background-color: transparent !important;
+    border-radius: 5% !important;
+
+    height: auto !important;
+    object-fit: contain !important;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 0 auto !important;
+}
+
+#row_game {
+    height: fit-content !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#scoreboard {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+#right_panel {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    align-self: flex-end;
+}
+
+.custom-button {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 100%;
+}
+
+#carousel-img1 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 200px; /* Adjust based on your desired height */
+    object-fit: contain; /* Ensure the image scales proportionally */
+}
+
+#carousel-img2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 200px; /* Adjust based on your desired height */
+    object-fit: contain; /* Ensure the image scales proportionally */
+}
+
+.avatar {
+    width: 8vw;
+    min-width: 70px;
+    height: 8vw;
+    min-height: 70px;
+    border-radius: 50%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons-container {
+    background-color: transparent;
+}
+
+.col-md-2 {
+    padding: 0;
+    border: 0cm;
+}
+
+.col-md-10 {
+    border: 0cm;
+    padding: 0;
+}
+
+.col-md-11 {
+    padding: 0;
+    border: 0cm;
+}
+
+#start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.596) url('../ressources/game/giphy.gif') center no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0); /* Commence avec un fond totalement transparent */
+    transition: background-color 1s ease-in-out;
+    pointer-events: none; /* Permet aux clics de passer à travers */
+    /* z-index: 999;  */
+}
+
+#result-screen.fade-in {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#result-screen.fade-out {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#loading-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.596);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------difficulties-------------------------*/
+.difficulty-options {
+    background-color: #EFC164;
+    font-weight: bold;
+    padding: 10px; 
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.form-check-label {
+    display: block !important;
+    font-weight: normal !important;
+    text-align: left !important;
+}
+
+.form-check-label:hover {
+    color: #00434C;
+    cursor: pointer;
+}
+
+/*-------------------------tooltip-------------------------*/
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #00434C;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 0%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.label-col-sm-3:hover .tooltiptext,
+.form-check-label:hover .tooltiptext {
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-weight: bold !important;
+}
+
+.tooltiptext-btn {
+    visibility: hidden;
+    width: 120px;
+    background-color: #00434C;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    right: 70%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn-tooltip:hover .tooltiptext-btn {
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-weight: bold !important;
+}
+
+
+/*-------------------------------------------------------------------*/
+/*                             Waiting page                          */
+/*-------------------------------------------------------------------*/
+/* Waiting dots animation */
+.spinner {
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% { 
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+/* End of waiting dots animation */
+
+/*-------------------------------------------------------------------*/
+/*                           Tournament page                         */
+/*-------------------------------------------------------------------*/
+.tournament_card {
+    width: 100%;
+    height: 300px;
+    min-width: 200px;
+}
+
+.duel_card {
+    height: 330px;
+}
+
+.user_avatar {
+    width: 45%;
+    height: 45%;
+    max-width: 225px;
+    max-height: 225px;
+    border-radius: 50%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar_small {
+    max-width: 80px !important;
+    max-height: 80px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdown { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+    z-index: 9999;
+} 
+
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background-color: #f9f9f9; 
+    min-width: 80px; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+    z-index: 10; 
+} 
+
+.dropdown:hover .dropdown-content { 
+    display: block; 
+}
+
+#home_button {
+    max-width: 300px;
+    margin: auto;
+}
+
+#pref_lang_drop {
+    position: relative;
+    top: 0px; 
+    right: 0px; 
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+/*-------------------------------------------------------------------*/
+/*                           Tournament tree                         */
+/*-------------------------------------------------------------------*/
+
+#tournamentOrderCard {
+    min-width: 1000px !important;
+    min-height: 700px !important;
+}
+
+#bracket {
+    overflow:hidden;
+    background-color: #e1e1e1;
+    background-color:rgba(225,225,225,0.9);
+    padding-top: 20px;
+    font-size: 12px;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+  
+#tournament_tree {
+    max-width: 1100px;
+    margin: 0 auto;
+    display:block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction:row;
+    flex-direction: row;
+}
+  
+.split {
+    display:block;
+    float:left;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:flex;
+    width: 42%;
+    -webkit-flex-direction:row;
+    -moz-flex-direction:row;
+    flex-direction:row;
+}
+  
+.round {
+    display:block;
+    float:left;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;display: -webkit-flex;
+    display:flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    width:95%;
+    width:30.8333%\9;
+    min-width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+.split-one .round {
+    margin: 0 2.5% 0 0;
+}
+  
+.split-two .round {
+    margin: 0 0 0 2.5%;
+}
+  
+.matchup {
+    margin:0;
+    width: 100%;
+    padding: 10px 0;
+    height: 60px;
+    min-width: 200px;
+    min-height: 100px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+  
+.score {
+    font-size: 11px;
+    text-transform: uppercase;
+    float: right;
+    color: #2C7399;
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+}
+  
+.team {
+    padding: 0 5px;
+    margin: 3px 0;
+    height: 25px; 
+    line-height: 25px;
+    white-space: nowrap; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+  
+.round-two .matchup { 
+    height: 0px;
+    padding: 50px 0;
+}
+  
+.round-details {
+    font-size: 18px;
+    color: #2C7399;
+    text-transform: uppercase;
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+}
+  
+.champion li, .round li {
+    background-color: #fff;
+    box-shadow: none; 
+    opacity: 1;
+}
+  
+.current li {
+    opacity: 1;
+}
+  
+.current li.team {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+.next_match {
+    border: 2px solid #EFC164;
+    border-radius: 5px;
+}
+
+#qr_code {
+    max-width: 150px;
+    max-height: 150px;
+}

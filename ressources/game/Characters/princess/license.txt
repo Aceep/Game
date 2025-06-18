@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sorceress princess
+* source:	https://sketchfab.com/3d-models/sorceress-princess-2bd993a6d19c4709b837c6b248eade0e
+* author:	SoraTeam (https://sketchfab.com/SoraTeam)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sorceress princess" (https://sketchfab.com/3d-models/sorceress-princess-2bd993a6d19c4709b837c6b248eade0e) by SoraTeam (https://sketchfab.com/SoraTeam) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
